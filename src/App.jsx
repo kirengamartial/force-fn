@@ -38,7 +38,7 @@ const Dashboard = () => {
   // We need separate functions to fetch all items and individual items
 const fetchAccounts = async () => {
   try {
-    const response = await apiService.fetchWithAuth('/accounts');  // Fetch all accounts
+    const response = await apiService.fetchWithAuth('/accounts');  
     setAccounts(response);
   } catch (error) {
     console.error('Failed to fetch accounts:', error);
